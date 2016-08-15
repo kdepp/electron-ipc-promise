@@ -1,0 +1,28 @@
+{
+  "name": "electron-ipc-promise",
+  "version": "0.1.0",
+  "description": "electron ipc promise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdepp/electron-ipc-promise.git"
+  },
+  "keywords": [
+    "electron",
+    "ipc",
+    "promise"
+  ],
+  "author": "kdepp <kdepp.cd@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kdepp/electron-ipc-promise/issues"
+  },
+  "homepage": "https://github.com/kdepp/electron-ipc-promise#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}
