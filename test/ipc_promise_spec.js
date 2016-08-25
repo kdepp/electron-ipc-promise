@@ -112,19 +112,16 @@ describe('IPC Promise', function () {
                 console.log('in on_B_Ask_A ', JSON.stringify(arguments));
 
                 if (cmd == 'multiply') {
-                    return  {
-                        data: args.reduce(function (prev, cur) {
-                            return prev * cur;
-                        }, 1)
-                    };
+                    return args.reduce(function (prev, cur) {
+                        return prev * cur;
+                    }, 1)
                 }
 
                 if (cmd == 'double') {
-                    return {
-                        data: args.map(function (item) {
-                            return item * 2;
-                        })
-                    };
+                    return args.map(function (item) {
+                        return item * 2;
+                    });
+
                 }
             });
 
@@ -132,19 +129,15 @@ describe('IPC Promise', function () {
                 console.log('in on_A_Ask_B ', JSON.stringify(arguments));
 
                 if (cmd == 'sum') {
-                    return {
-                        data: args.reduce(function (prev, cur) {
-                            return prev + cur;
-                        }, 0)
-                    };
+                    return args.reduce(function (prev, cur) {
+                        return prev + cur;
+                    }, 0);
                 }
 
                 if (cmd == 'triple') {
-                    return {
-                        data: args.map(function (item) {
-                            return item * 3;
-                        })
-                    };
+                    return args.map(function (item) {
+                        return item * 3;
+                    });
                 }
             });
 
